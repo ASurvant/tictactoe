@@ -1,4 +1,6 @@
 $(function(){
+  $turn = true;
+
   $('div').mouseenter(function(){
     $(this).css("background-color", "yellow");
   });
@@ -8,6 +10,12 @@ $(function(){
   });
 
   $('div').click(function(){
-    $(this).fadeOut('slow');
+    if($turn) {
+      $(this).append('X');
+      $turn = !$turn;
+    } else {
+      $(this).append('O');
+      $turn = !$turn;
+    };
   });
 });
