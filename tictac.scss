@@ -1,0 +1,53 @@
+.rawr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mid-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#tile {
+  align-self: center;
+  padding: 3em;
+  margin: 0.5em;
+  width: 1em;
+  height: 1em;
+  border: 2px solid black;
+  border-radius: 10px;
+}
