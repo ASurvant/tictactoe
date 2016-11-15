@@ -20,11 +20,6 @@ header {
   flex-direction: column;
   margin: 6em 0em 0em 0em;
 }
-.rawr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .top-container {
   display: -webkit-box;
@@ -47,6 +42,9 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
+
+  // width: 50%;
+  // height: 50%;
 }
 
 .left-col {
@@ -70,6 +68,7 @@ header {
 
   align-self: center;
   padding: 3em;
+  margin: 0.5em;
   width: 1em;
   height: 1em;
   border: 2px solid black;
@@ -98,11 +97,11 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -2;
+  z-index: -1;
   flex-direction: column;
+
 }
 
-.reset {
-  font-family: 'Shadows Into Light', cursive;
+.reset{
   z-index: 1;
 }
