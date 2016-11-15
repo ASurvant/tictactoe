@@ -1,4 +1,4 @@
-html, body, h1, h2 {
+html, body, h1, h2, h3 {
   margin: 0;
   padding: 0;
   font-family: 'Shadows Into Light', cursive;
@@ -75,4 +75,30 @@ header {
   height: 1em;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+footer {
+  font-family: 'Titillium Web', sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: center;
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -moz-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  flex-direction: column;
 }

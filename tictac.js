@@ -8,7 +8,7 @@ $(function() {
   $winConditions = [
     ["tl","tm","tr"],["tl","mm","br"],["tl","ml","br"],
     ["tm","mm","bm"],["tr","mr","br"],["ml","mm","mr"],
-    ["tr","mm","bl"],["br","bm","br"]
+    ["tr","mm","bl"],["br","bm","bl"]
   ];
 
   $('div').mouseenter(function() {
