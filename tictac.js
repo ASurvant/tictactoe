@@ -30,38 +30,50 @@ $(function() {
         } else if ($player2.indexOf($winConditions[i][j]) > -1) {
           ptc += 1;
         }
-      }
+      };
+
       if (poc === 3) {
         $('.whose-move').text("PLAYER ONE FTW!!");
         $over = true;
+        $('.reset').text("(click me to reset)");
       } else if (ptc == 3) {
         $('.whose-move').text("PLAYER TWO won or something")
         $over = true;
+        $('.reset').text("(click me to reset)");
+      }
+      if (!$over && $player1.length === 5) {
+        $('.whose-move').text("DRAW!!!")
+        $over = true;
+        $('.reset').text("(click me to reset)");
       }
     }
   }
 
 
   $('div').click(function() {
-    if (($(this).empty) && !$over) {
-      if ($turn && !$(this).hasClass('.taken')) {
+     if (($(this).empty) && !$over) {
+       if ($turn && !$(this).hasClass('.taken')) {
 
-        $player1.push(this.className);
-        $(this).append('<h5>X</h5>').addClass('.taken');
-        $turn = !$turn;
-        $('.whose-move').text("player two's move");
-        winCheck();
+         $player1.push(this.className);
+         $(this).append('<h5>X</h5>').addClass('.taken');
+         $turn = !$turn;
+         $('.whose-move').text("player two's move");
+         winCheck();
 
-      } else if (!$(this).hasClass('.taken')) {
+       } else if (!$(this).hasClass('.taken')) {
 
-        $player2.push(this.className);
-        $(this).append('<h5>O</h5>').addClass('.taken');
-        $turn = !$turn;
-        $('.whose-move').text("player one's move");
-        winCheck();
-      };
-    };
+         $player2.push(this.className);
+         $(this).append('<h5>O</h5>').addClass('.taken');
+         $turn = !$turn;
+         $('.whose-move').text("player one's move");
+         winCheck();
+       };
+     };
+   });
+
+  $('.reset').click(function() {
+    // if ($over && ) {
+    //
+    // }
   });
-
-
 });
