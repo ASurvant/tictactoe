@@ -25,9 +25,12 @@ $(function() {
       var ptc = 0;
 
       for (var j = 0; j < $winConditions[i].length; j++) {
+        console.log("in i loop");
         if ($player1.indexOf($winConditions[i][j]) > -1) {
+          console.log("in p1 loop");
           poc += 1;
         } else if ($player2.indexOf($winConditions[i][j]) > -1) {
+          console.log("in p2 loop");
           ptc += 1;
         }
       };
